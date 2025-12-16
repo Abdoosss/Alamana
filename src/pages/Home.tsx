@@ -11,10 +11,7 @@ const Home: React.FC = () => {
       <section 
         className="hero"
         style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/IMG_3460.PNG')`,
-          backgroundSize: 'cover',
-          backgroundPosition: '40% center',
-          backgroundRepeat: 'no-repeat'
+          background: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/IMG_3460.PNG')`
         }}
       >
         <motion.div

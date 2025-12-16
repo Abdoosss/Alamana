@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Performance optimizations */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reduce paint and layout thrashing */
+.feature-card,
+.service-item,
+.contact-card {
+  contain: layout style paint;
+}
+
+/* GPU acceleration for animations */
+.btn,
+.feature-card,
+.service-item {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+body {
+  font-family: 'Amiri', 'Scheherazade New', 'Reem Kufi', serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f8f9fa;
+  direction: rtl;
+  text-align: right;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Global Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  position: relative;
+  font-family: 'Scheherazade New', 'Amiri', serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(45deg, #8B4513, #D2691E);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #8B4513, #D2691E);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Scheherazade New', 'Amiri', serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p, span, div {
+  font-family: 'Amiri', 'Reem Kufi', serif;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Make body text lighter */
+body {
+  font-weight: 400;
+}
+
+/* Navigation and buttons with slightly bolder text for readability */
+.nav-link, .btn {
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}

@@ -24,8 +24,8 @@ const Contact: React.FC = () => {
     {
       icon: <FaInstagram />,
       title: 'انستغرام',
-      value: '@aman.ah1270',
-      link: 'https://www.instagram.com/aman.ah1270?igsh=MWFvMmE4aDg0ZWFtYQ==&utm_source=ig_contact_invite',
+      value: '@alamanah_furniture1',
+      link: 'https://www.instagram.com/alamanah_furniture1?igsh=MWFvMmE4aDg0ZWFtYQ==',
       color: '#E4405F'
     },
     {
@@ -291,7 +291,7 @@ const Contact: React.FC = () => {
           </a>
           
           <a 
-            href="https://www.instagram.com/aman.ah1270?igsh=MWFvMmE4aDg0ZWFtYQ==&utm_source=ig_contact_invite" 
+            href="https://www.instagram.com/alamanah_furniture1?igsh=MWFvMmE4aDg0ZWFtYQ==" 
             target="_blank" 
             rel="noopener noreferrer"
             className="quick-contact-item instagram"
